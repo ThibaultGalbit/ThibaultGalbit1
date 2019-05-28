@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.StatistiqueRegion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Choisissez une statistique que vous souhaitez découvire" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <Button Text="Nombre de région par secteur" Clicked="BtnNbRegBySec_ClickedAsync" x:Name="btnNbRegBySect"></Button>
+            <Button Text="Quel est le nombre Maximum et minimum de visiteurs dans une région" Clicked="BtnMinAndMaxVis_ClickedAsync" x:Name="btnMinAndMaxVis"></Button>
+            <Button Text="Retour" Clicked="BtnRetour_ClickedAsync" x:Name="btnNbRegBySec"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

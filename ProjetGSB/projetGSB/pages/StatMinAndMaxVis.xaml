@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.StatMinAndMaxVis">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Statistique" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <ListView x:Name="lvMinAndMaxVis">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding MinAndMaxVis}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="retour" Clicked="BtnRetour_ClickedAsync"  x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
